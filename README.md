@@ -30,7 +30,7 @@ in folder src=>app=>e-commerceWebsite=>
 
 **and there are 2folder**
 
-1-pipes => which generate pipe inside it called ***subDetail***
+1-pipes => which generate pipe inside it called ***subDetaile***
 
 this pipe used for displaying a piece of description product 
 
