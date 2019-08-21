@@ -1,27 +1,44 @@
 # ECommerceWebsite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+### Description
 
-## Development server
+1.“e-commerce website” gives you a list of products that can add any of them to the cart
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2.each of product has name, description, image and quantity
 
-## Code scaffolding
+3.can add product to the cart if there is quantity 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4.there is two page productList,cart you can navigate between them
 
-## Build
+### Table of Contents
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+project content from:
 
-## Running unit tests
+there are 4 component, folder called service ,folder called pipes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+in folder src=>app=>e-commerceWebsite=>
 
-## Running end-to-end tests
+**there ara 4 component**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1-navbar component 
 
-## Further help
+2-footer component 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3-productList component => which display list of product from api
+
+4-cart component => which display product that added to cart
+
+**and there are 2folder**
+
+1-pipes => which generate pipe inside it 
+
+this pipe used for displaying a piece of description product 
+
+2-services=>which generate service inside it 
+
+use it for contact with api to get all product by http request, and share data between two component (productlist Component, cart Component)
+
+**Installation:**
+can use cli to install node module by command /npm i/
+and serve project by command /ng s/
+
