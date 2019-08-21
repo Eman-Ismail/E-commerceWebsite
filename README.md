@@ -34,7 +34,7 @@ in folder src=>app=>e-commerceWebsite=>
 
 this pipe used for displaying a piece of description product 
 
-2-services=>which generate service inside it 
+2-services=>which generate service inside it  
 
 use it for contact with api to get all product by http request, and share data between two component (productlist Component, cart Component)
 
