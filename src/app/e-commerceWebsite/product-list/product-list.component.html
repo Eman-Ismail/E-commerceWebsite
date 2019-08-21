@@ -1,0 +1,68 @@
+<!-- start contaianer for product list  -->
+<div class="container">
+    <div class="products">
+
+        <!-- start product list title  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h2 class="text-center"><span class="markColor">O</span>ur <span class="markColor">N</span>ew <span class="markColor">P</span>roduct</h2>
+                </div>
+            </div>
+        </div>
+        <!-- End product list title  -->
+
+        <!-- start product list gride  -->
+        <div class="product-list px-2">
+            <div class="row">
+                <div class="col-lg-4" *ngFor="let product of productList">
+
+                    <div class="oneproduct text-center">
+                        <img [src]="product.thumbImg" />
+                        <p class="productName font-weight-bold">{{product.title}}</p>
+                        <p class="productDetails">{{product.detail|subDetaile:100}}<a class="moreDetails" href="#">More</a></p>
+                        <button (click)="checkQuantity(product.id)" class="font-weight-bold btn btn-block btnAddToCart" type="button">Add To Cart</button>
+                    </div>
+
+                    <div class="quantity">
+                        <p [ngStyle]="{'background-color': setQuantityColor(product.quantity),'padding.px':10}">
+                            Quantity
+                            <span class="font-weight-bold">{{product.quantity}}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End product list gride  -->
+
+    </div>
+</div>
+<!-- End contaianer for product list  -->
+
+
+
+
+<!--start pop up to confirm or not debend on product quantity-->
+<div id="confirmModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 *ngIf="productExit" class="modal-title">confirm </h5>
+                <h5 *ngIf="productNotExit" class="modal-title">there is no quantity </h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="confirm" *ngIf="productExit">confirm add to Cart</p>
+                <p class="noQuantity" *ngIf="productNotExit">you can’t add this product </p>
+            </div>
+            <div class="modal-footer" [hidden]="popupBtn">
+                <button type="button" class="btn btn-cancel" data-dismiss="modal">cancel </button>
+                <button (click)="saveProductToCart()" type="button" class="btn btn-save ">save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End pop up to confirm or not debend on product quantity-->

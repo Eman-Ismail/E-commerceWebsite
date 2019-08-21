@@ -1,0 +1,98 @@
+/* start style section products */
+
+.products {
+    box-shadow: 0px 0px 15px 0px #D6D6D6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    font-family: 'Lato', sans-serif;
+    color: #606161;
+    padding: 30px 0;
+}
+
+.markColor {
+    color: #ac2d88;
+}
+
+
+/* End style section products */
+
+
+/* start style each product inside grid */
+
+.oneproduct {
+    background-color: #ededed69;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.quantity {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    color: #fff;
+}
+
+.productName {
+    font-family: 'Lato', sans-serif;
+}
+
+.productDetails {
+    color: #606161;
+    height: 100px;
+}
+
+.moreDetails {
+    text-decoration: none;
+    color: #ac2d88;
+    font-weight: 600;
+}
+
+
+/* End style each product inside grid */
+
+
+/* start style buttons and popup */
+
+.btnAddToCart,
+.btn-save,
+.modal-header {
+    background-color: #ac2d88;
+    color: #fff;
+}
+
+.btnAddToCart:hover,
+.btn-save:hover {
+    background-color: #fff;
+    border: 2px solid #ac2d88;
+    color: #ac2d88;
+}
+
+.btn-cancel {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-cancel:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.close {
+    color: #fff;
+}
+
+.confirm,
+.noQuantity {
+    font-size: 22px;
+}
+
+
+/* start style buttons and popup */

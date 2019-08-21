@@ -1,0 +1,39 @@
+<!-- start contaianer for product in cart  -->
+<div class="container">
+    <div class="products">
+        <!-- start cart title  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h2 class="text-center"><span class="markColor">S</span>hopping <span class="markColor">C</span>art
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!-- end cart title  -->
+
+        <!-- start cart gride  -->
+        <div class="cart px-2">
+            <div class="row">
+                <div class="col-lg-12" *ngFor="let cartProduct of addtocart">
+                    <div class="productInCart p-3">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <img [src]="cartProduct.thumbImg" />
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="productName font-weight-bold mt-5">{{cartProduct.title}}</p>
+                                <p class="productDisc">{{cartProduct.detail}}</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <button (click)="deleteFromCart(cartProduct.id)" type="button" class="btn btn-block mt-5 btn-delete">delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end cart gride  -->
+    </div>
+</div>
+<!-- end contaianer for product in cart  -->

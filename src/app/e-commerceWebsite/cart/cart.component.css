@@ -1,0 +1,40 @@
+/* start style section products */
+
+.products {
+    box-shadow: 0px 0px 15px 0px #D6D6D6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    font-family: 'Lato', sans-serif;
+    color: #606161;
+    padding: 30px 0;
+}
+
+.markColor {
+    color: #ac2d88;
+}
+
+
+/* end style section products */
+
+
+/* start style each product in cart inside grid */
+
+.productInCart {
+    border: 2px solid #ac2d88;
+    margin: 10px;
+}
+
+.productInCart img {
+    background-color: #ededed69;
+}
+
+.btn-delete {
+    background-color: #ac2d88;
+    color: #fff;
+}
+
+
+/* end style each product in cart inside grid */
